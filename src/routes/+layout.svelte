@@ -41,9 +41,9 @@
     referrerpolicy="no-referrer"
   ></script>
 </svelte:head>
-<div class="fixed inset-0 z-[-1]" id="bg">
+<div class="fixed h-lvh w-screen z-[-100]" id="bg">
 </div>
-<div class="p-10 max-w-screen-xl">
+<div class="p-10 pt-5 max-w-screen-xl">
   
   <Header />
 
