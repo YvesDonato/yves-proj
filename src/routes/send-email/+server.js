@@ -1,51 +1,38 @@
 import { json } from '@sveltejs/kit';
+import sgMail from '@sendgrid/mail';
 
 export async function POST({ request }) {
   try {
-    // Parse form data (because an HTML form uses x-www-form-urlencoded or multipart/form-data)
-    const formData = await request.formData();
-    const userEmail = formData.get('email');
+    // 1) Set the API Key
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    
+    // 2) Parse the form or JSON data
+    const data = await request.formData();
+    const userEmail = data.get('email');
 
-    // Validate
     if (!userEmail) {
       return json({ error: 'Email is required.' }, { status: 400 });
     }
 
-    // Retrieve env variables (the same as before)
-    const sendgridApiKey = process.env.SENDGRID_API_KEY;
-    const emailTo = process.env.EMAIL_TO;
-    const emailFrom = process.env.EMAIL_FROM;
+    // 3) Build your message
+    const msg = {
+      to: "yvesdonato0@gmail.com",
+      from: "yvesdonato0@gmail.com", // verified with SendGrid
+      subject: 'New Contact Form Submission',
+      text: `You have received a new email submission: ${userEmail}`
+    };
 
-    // Send email via SendGrid
-    const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${sendgridApiKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        personalizations: [{ to: [{ email: emailTo }] }],
-        from: { email: emailFrom },
-        subject: 'New Contact Form Submission',
-        content: [
-          {
-            type: 'text/plain',
-            value: `You have received a new email submission: ${userEmail}`
-          }
-        ]
-      })
-    });
+    // 4) Send the email
+    const [response] = await sgMail.send(msg);
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error('SendGrid error:', errorText);
-      return json({ error: 'Failed to send email.' }, { status: 500 });
+    // Check response status
+    if (response.statusCode >= 200 && response.statusCode < 300) {
+      return json({ success: true, message: 'Email sent successfully via Node library.' }, { status: 200 });
+    } else {
+      return json({ error: 'Failed to send email (status code).'}, { status: 500 });
     }
-
-    return json({ success: true, message: 'Email sent successfully.' }, { status: 200 });
   } catch (error) {
-    console.error('Error:', error);
+    console.error('SendGrid Node.js library error:', error);
     return json({ error: 'Internal server error.' }, { status: 500 });
   }
 }
-

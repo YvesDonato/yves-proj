@@ -1,4 +1,26 @@
 <script>
+  async function handleSubmit(event) {
+    event.preventDefault(); // Stop navigation
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const email = formData.get('email');
+
+    // Now, do a fetch POST to /send-email
+    const response = await fetch('/send-email', {
+      method: 'POST',
+      body: formData
+    });
+    const result = await response.json();
+
+    if (result.success) {
+      console.log('Email sent:', result);
+      const input = document.getElementById("email");
+      input.value = "";
+    } else {
+      console.error('Error:', result.error);
+    }
+  }
 </script>
 
 <div class="md:grid md:grid-cols-2 gap-6 overflow-auto md:h-96 text-gray-300 rounded-lg shadow-xl my-12 lg:mx-32 p-10 bg-gray-800">
@@ -12,7 +34,7 @@
       or give me your email for a copy of my resume. 
     </h1>
 
-    <form action="/send-email" method="POST" class="flex flex-col xl:mx-2 xl:flex-row xl:justify-center xl:space-y-0">
+    <form on:submit|preventDefault={handleSubmit} class="flex flex-col xl:mx-2 xl:flex-row xl:justify-center xl:space-y-0">
       <input id="email" type="email" name="email" class="px-6 py-3 border rounded-md bg-gray-900 text-gray-300 border-gray-600 focus:ring-blue-300 focus:ring-opacity-40 focus:border-blue-300 focus:outline-none focus:ring sm:mx-2" placeholder="Email Address" required/>
       <button class="px-6 py-3 text-xs font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none sm:mx-2">
           Submit
