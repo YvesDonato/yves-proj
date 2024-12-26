@@ -43,7 +43,7 @@
 </svelte:head>
 <div class="fixed h-lvh w-screen z-[-100]" id="bg">
 </div>
-<div class="p-10 pt-5 max-w-screen-xl">
+<div class="mx-auto p-10 pt-5 max-w-screen-xl">
   
   <Header />
 
