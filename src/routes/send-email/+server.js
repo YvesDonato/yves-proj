@@ -1,24 +1,17 @@
 import { json } from '@sveltejs/kit';
 
-/** 
- * POST /send-email
- * SvelteKit automatically routes POST requests here.
- */
 export async function POST({ request }) {
   try {
-    // Parse the incoming JSON body
-    const formData = await request.json();
-    const userEmail = formData.email;
+    // Parse form data (because an HTML form uses x-www-form-urlencoded or multipart/form-data)
+    const formData = await request.formData();
+    const userEmail = formData.get('email');
 
-    // Simple validation
+    // Validate
     if (!userEmail) {
       return json({ error: 'Email is required.' }, { status: 400 });
     }
 
-    // Here, fetch your env vars. 
-    // In many SvelteKit setups, you'd use `import.meta.env.VITE_...` 
-    // or something like process.env.SENDGRID_API_KEY if your deployment 
-    // environment injects them that way.
+    // Retrieve env variables (the same as before)
     const sendgridApiKey = process.env.SENDGRID_API_KEY;
     const emailTo = process.env.EMAIL_TO;
     const emailFrom = process.env.EMAIL_FROM;
@@ -31,12 +24,8 @@ export async function POST({ request }) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email: emailTo }]
-          }
-        ],
-        from: { email: emailFrom }, // Must be verified with SendGrid
+        personalizations: [{ to: [{ email: emailTo }] }],
+        from: { email: emailFrom },
         subject: 'New Contact Form Submission',
         content: [
           {

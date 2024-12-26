@@ -12,7 +12,7 @@
       or give me your email for a copy of my resume. 
     </h1>
 
-    <form method="POST" class="flex flex-col xl:mx-2 xl:flex-row xl:justify-center xl:space-y-0">
+    <form action="/send-email" method="POST" class="flex flex-col xl:mx-2 xl:flex-row xl:justify-center xl:space-y-0">
       <input id="email" type="email" name="email" class="px-6 py-3 border rounded-md bg-gray-900 text-gray-300 border-gray-600 focus:ring-blue-300 focus:ring-opacity-40 focus:border-blue-300 focus:outline-none focus:ring sm:mx-2" placeholder="Email Address" required/>
       <button class="px-6 py-3 text-xs font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none sm:mx-2">
           Submit
