@@ -23,7 +23,7 @@
   }
 </script>
 
-<div class="md:grid md:grid-cols-2 gap-6 overflow-auto md:h-96 text-gray-300 rounded-lg shadow-xl my-12 lg:mx-32 p-10 bg-gray-800">
+<div class="md:grid md:grid-cols-2 gap-6 overflow-auto md:h-96 text-gray-300 rounded-lg shadow-xl my-10 lg:my-28 lg:mx-32 p-10 bg-gray-800">
   <h1 class="text-center my-auto bg-clip-text break-words text-transparent bg-gradient-to-r from-red-400 to-blue-500 text-2xl">
     Currently exploring options within the industry. 
   </h1>
@@ -44,8 +44,8 @@
 
 </div>
 
-<div class="text-gray-300 rounded-lg shadow p-10 bg-gray-800">
-  <p class="text-center">
+<div class="flex items-center text-gray-300 py-auto text-center rounded-lg shadow p-10 lg:h-72 bg-gray-800">
+  <p>
     Hello, My name is Yves Donato, I'm a software devloper. If you visted this website I would assume you either typed my name in the url bar to see if I had a website or I have personally shared the website to you.
     That would mean that you might be interested in my skills or you are just a friend checking it out. Well either way <b>Welcome to my Website!</b> Please stay and look around.  
   </p>
