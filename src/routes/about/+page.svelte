@@ -30,8 +30,8 @@
   End Date: Winter 2018 <br><br>
   Company: Reliq Health <br>
   Occupation: Software Developer Intern <br>
-  Start Date: Fall 2018 <br>
-  End Date: Winter 2019 <br>
+  Start Date: Winter 2018 <br>
+  End Date: Spring 2019 <br>
   </p>
 
 </div>
