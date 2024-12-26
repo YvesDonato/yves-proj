@@ -31,7 +31,7 @@
     
     <h1 class="text-center text-lg m-5 break-words">
       Interested contact me at <b>yvesdonato0@gmail.com</b>
-      or give me your email. 
+      or send me your email. 
     </h1>
 
     <form on:submit|preventDefault={handleSubmit} class="flex flex-col xl:mx-2 xl:flex-row xl:justify-center xl:space-y-0">

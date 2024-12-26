@@ -5,7 +5,7 @@
   Name: Yves Donato <br>
   Contact: yvesdonato0@gmail.com <br>
   </p>
-  <h1 class="text-xl text-center mb-5">Education</h1>
+  <h1 class="text-xl text-center my-5">Education</h1>
   <hr>
   <p class="mt-5">
   School: Sheridan College <br>
@@ -18,13 +18,13 @@
   SHSM: Energy (Computer Science), Now called Information and Communications Technology (2022) <br>
   Graduated Date: Summer 2021 <br>
   </p>
-  <h1 class="text-xl text-center mb-5">Work Experience</h1>
+  <h1 class="text-xl text-center my-5">Work Experience</h1>
   <hr>
   <p class="mt-5">
   Current Company: Walmart Canada <br>
   Occupation Title: Dairy Frozen Associate <br>
-  Start Date: 2022 <br>
-  Company: Weever Apps  <br><br>
+  Start Date: 2022 <br><br>
+  Company: Weever Apps  <br>
   Occupation: QA Intern <br>
   Start Date: Summer 2018 <br>
   End Date: Winter 2018 <br><br>
