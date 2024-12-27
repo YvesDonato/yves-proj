@@ -1,6 +1,6 @@
 <div class="rounded-lg shadow p-6 my-10 text-gray-300 bg-gray-800">
   <h1 class="text-xl text-center mb-5">Bio</h1>
-  <hr>
+  <hr class="h-px my-8 bg-gray-200 border-0">
   <p class="my-5 font-semibold text-white">
     Name: Yves Donato <br>
     Contact: yvesdonato0@gmail.com <br>
@@ -8,7 +8,7 @@
 </div>
 <div class="rounded-lg shadow p-6 my-10 text-gray-300 bg-gray-800">
   <h1 class="text-xl text-center my-5">Education</h1>
-  <hr>
+  <hr class="h-px my-8 bg-gray-200 border-0">
   <ol class="relative border-s border-gray-700 mt-5">                  
       <li class="mb-10 ms-4">
           <div class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
@@ -42,7 +42,7 @@
 </div>
 <div class="rounded-lg shadow p-6 my-10 text-gray-300 bg-gray-800">
   <h1 class="text-xl text-center my-5">Work Experience</h1>
-  <hr>
+  <hr class="h-px my-8 bg-gray-200 border-0">
   <ol class="relative border-s border-gray-700 mt-5">                  
       <li class="mb-10 ms-4">
           <div class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
