@@ -10,7 +10,7 @@
   'opsz' 24
 }
 </style>
-<div class="grid gap-4 fixed top-4 inset-x-4">
+<div class="grid place-content-center gap-4 fixed top-4 inset-4">
   <div class="w-full rounded-lg shadow p-6 text-gray-200 bg-gray-800 transition delay-150 duration-300 ease-in-out">
     <p>
       Dear Recruiter, <br><br>
