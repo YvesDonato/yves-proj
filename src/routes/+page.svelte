@@ -1,30 +1,9 @@
 <script>
-	async function handleSubmit(event) {
-		event.preventDefault(); // Stop navigation
 
-		const form = event.target;
-		const formData = new FormData(form);
-		const email = formData.get('email');
-
-		// Now, do a fetch POST to /send-email
-		const response = await fetch('/send-email', {
-			method: 'POST',
-			body: formData
-		});
-		const result = await response.json();
-
-		if (result.success) {
-			console.log('Email sent:', result);
-			const input = document.getElementById('email');
-			input.value = '';
-		} else {
-			console.error('Error:', result.error);
-		}
-	}
 </script>
 
 <div
-	class="gap-6 overflow-auto rounded-lg bg-gray-800 p-10 text-gray-300 shadow-xl md:grid md:h-96 md:grid-cols-2 lg:mx-32 lg:my-28"
+	class="gap-6 overflow-auto rounded-lg bg-gray-800 p-10 text-gray-300 shadow-xl md:grid md:h-96 md:grid-cols-2 lg:mx-32 lg:my-20"
 >
 	<h1
 		class="my-auto break-words bg-gradient-to-r from-red-400 to-blue-500 bg-clip-text text-center text-2xl text-transparent"

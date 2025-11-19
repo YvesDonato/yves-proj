@@ -1,12 +1,13 @@
-<div class="my-10 rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
+<div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
 	<h1 class="mb-5 text-center text-xl">Bio</h1>
 	<hr class="my-8 h-px border-0 bg-gray-200" />
 	<p class="my-5 font-semibold text-white">
 		Name: Yves Donato <br />
-		Contact: yvesdonato0@gmail.com <br />
+		Contact: yvesdonato@pm.me <br />
+		LinkedIn:  <a href="https://www.linkedin.com/in/yves-donato-319548250/">yves-donato-319548250</a> 
 	</p>
 </div>
-<div class="my-10 rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
+<div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
 	<h1 class="my-5 text-center text-xl">Education</h1>
 	<hr class="my-8 h-px border-0 bg-gray-200" />
 	<ol class="relative mt-5 border-s border-gray-700">
@@ -63,20 +64,10 @@
 		</li>
 	</ol>
 </div>
-<div class="my-10 rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
+<div class=" rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
 	<h1 class="my-5 text-center text-xl">Work Experience</h1>
 	<hr class="my-8 h-px border-0 bg-gray-200" />
 	<ol class="relative mt-5 border-s border-gray-700">
-		<li class="mb-10 ms-4">
-			<div
-				class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"
-			></div>
-			<time class="mb-1 text-sm font-normal leading-none text-gray-500">Spring 2022</time>
-			<h3 class="text-lg font-semibold text-white">Walmart Canada</h3>
-			<p class="mb-4 text-base font-normal text-gray-400">
-				Part-time Job while doing my Computer Science Degree, Dairy Frozen Associate.
-			</p>
-		</li>
 		<li class="mb-10 ms-4">
 			<div
 				class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"

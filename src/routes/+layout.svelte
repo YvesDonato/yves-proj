@@ -1,6 +1,8 @@
 <script lang="ts">
 	import './layout.css';
+	import { page } from '$app/stores';
   import Header from './Header.svelte';
+
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount, onDestroy } from 'svelte';
 
@@ -48,10 +50,11 @@
 </svelte:head>
 <div class="fixed h-screen w-screen z-[-100]" id="bg">
 </div>
-<div class="grid gap-4 w-screen p-4">  
-	<Header />
- 
-  <main class="grid gap-4">
+<div class="grid w-screen p-4">
+  {#if $page.url.pathname !== '/resume'}
+  	<Header />
+  {/if}
+  <main class="grid gap-4 py-4">
 		{@render children()}
   </main>
 </div>
