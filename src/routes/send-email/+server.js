@@ -5,7 +5,7 @@ export async function POST({ request }) {
   try {
     // 1) Set the API Key
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-    
+    console.log("test"+process.env.SENDGRID_API_KEY);
     // 2) Parse the form or JSON data
     const data = await request.formData();
     const userEmail = data.get('email');

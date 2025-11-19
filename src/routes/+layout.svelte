@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
+	import './layout.css';
   import Header from './Header.svelte';
-  import '../app.css';
+	import favicon from '$lib/assets/favicon.svg';
+	import { onMount, onDestroy } from 'svelte';
 
   let vantaEffect;
 
@@ -30,9 +31,12 @@
       vantaEffect = null;
     }
   });
+
+	let { children } = $props();
 </script>
 
 <svelte:head>
+	<link rel="icon" href={favicon} />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"
@@ -40,15 +44,15 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+
 </svelte:head>
 <div class="fixed h-screen w-screen z-[-100]" id="bg">
 </div>
-<div class="mx-auto sm:p-10 p-2 pt-5 max-w-screen-2xl">
-  
-  <Header />
-
-  <main class="h-screen">
-    <slot />
+<div class="grid gap-4 w-screen p-4">  
+	<Header />
+ 
+  <main class="grid gap-4">
+		{@render children()}
   </main>
 </div>
 
