@@ -1,5 +1,5 @@
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
 </head>
 <style>
 .material-symbols-outlined {
@@ -36,11 +36,19 @@
       Yves Donato
     </p>
   </div>
-  <a href="/" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
-    <span class="material-symbols-outlined">
-      arrow_back
-    </span>
-    <p>Home</p>
-  </a>
+  <div class="flex place-content-between">
+    <a href="/" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
+      <span class="material-symbols-outlined">
+        arrow_back
+      </span>
+      <p>Home</p>
+    </a>
+    <a href="/about" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
+      <p>Next</p>
+      <span class="material-symbols-outlined">
+        arrow_forward
+      </span>
+    </a>
+  </div>
   
 </div>
