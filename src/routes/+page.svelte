@@ -1,7 +1,7 @@
 <script>
 
 </script>
-<div class="flex flex-col pt-6 pb-1 md:py-6 gap-6 h-max md:h-auto md:py-0 md:gap-0 md:flex-grow md:justify-around">
+<div class="flex flex-col pt-6 pb-1 md:py-6 gap-6 h-max md:h-auto md:py-0  md:flex-grow md:justify-around">
   <div
     class="gap-6 rounded-lg bg-gray-800 p-10 text-gray-300 shadow-xl grid h-96 md:grid-cols-2 lg:mx-32 md:my-0"
   >
