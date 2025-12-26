@@ -48,14 +48,15 @@
   ></script>
 
 </svelte:head>
-<div class="fixed h-screen w-screen z-[-100]" id="bg">
+<div class="fixed inset-0 z-[-100]" id="bg">
 </div>
-<div class="grid w-screen p-4">
-  {#if $page.url.pathname !== '/resume'}
-  	<Header />
-  {/if}
-  <main class="grid gap-4 py-4">
-		{@render children()}
-  </main>
+<div class="w-screen flex justify-center">
+  <div class="absolute inset-y-0 grid m-4 md:max-w-350">
+    <!-- <div class="grid w-screen h-screen md:max-w-350"> -->
+      {#if $page.url.pathname !== '/resume'}
+        <Header />
+      {/if}
+      {@render children()}
+    <!-- </div> -->
+  </div>
 </div>
-
