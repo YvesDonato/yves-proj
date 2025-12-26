@@ -48,10 +48,10 @@
   ></script>
 
 </svelte:head>
-<div class="fixed inset-0 z-[-100]" id="bg">
+<div class="fixed -inset-10 z-[-100]" id="bg">
 </div>
-<div class="w-screen flex justify-center">
-  <div class="absolute inset-y-0 grid m-4 md:max-w-350">
+<div class="absolute inset-0 flex justify-center">
+  <div class="absolute inset-0 md:max-w-350 md:p-6 p-1" class:md:min-h-screen={$page.url.pathname === '/'} class:md:flex={$page.url.pathname === '/'} class:md:flex-col={$page.url.pathname === '/'} class:md:justify-between={$page.url.pathname === '/'}>
     <!-- <div class="grid w-screen h-screen md:max-w-350"> -->
       {#if $page.url.pathname !== '/resume'}
         <Header />
