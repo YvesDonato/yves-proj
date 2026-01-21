@@ -52,8 +52,7 @@
         <p class="mb-4 text-base font-normal text-gray-400">
           Alumni of Sheridan College Institute of Technology and Advanced Learning.
         </p>
-        <p class="mb-4 text-base font-normal">Relevant Coursework: Web Development (Angular, React), OOP (Java, C#), Software Method-
-  ologies, UX/UI Design, Database Modeling.</p>
+        <p class="mb-4 text-base font-normal">Relevant Coursework: Web Development (Angular, React), OOP (Java, C#), Software Methodologies, UX/UI Design, Database Modeling.</p>
         <a
           href="https://www.sheridancollege.ca/programs/computer-programming"
           class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:z-10 focus:text-blue-700 focus:outline-none focus:ring-4 focus:ring-gray-700"
