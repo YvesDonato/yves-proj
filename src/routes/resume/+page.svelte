@@ -1,17 +1,5 @@
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
-</head>
-<style>
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-</style>
-<div class="grid place-content-center gap-4 top-4 pb-4 md:inset-4">
-  <div class="w-full rounded-lg shadow p-6 text-gray-200 bg-gray-800 transition delay-150 duration-300 ease-in-out">
+<div class="absolute inset-0 animate-slide-in grid place-content-center gap-4 top-4 pb-4 md:inset-4">
+  <div class="max-w-200 rounded-lg shadow p-6 text-gray-200 bg-gray-800">
     <p>
       Dear Recruiter, <br><br>
       I want to formally thank you for taking your time to both examine my resume and website. I know there are plenty of exceptional applicants who have applied to your company, so taking your time to click on the link on my resume means the world to me, even if you were just checking if I was lying about having a website.
@@ -38,16 +26,12 @@
   </div>
   <div class="flex place-content-between">
     <a href="/" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
-      <span class="material-symbols-outlined">
-        arrow_back
-      </span>
+      <img src="/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Back arrow" />
       <p>Home</p>
     </a>
     <a href="/about" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
       <p>Next</p>
-      <span class="material-symbols-outlined">
-        arrow_forward
-      </span>
+      <img src="/arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Forward arrow" />
     </a>
   </div>
   

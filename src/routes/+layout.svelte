@@ -39,6 +39,9 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"
@@ -51,9 +54,9 @@
 <div class="fixed -inset-10 z-[-100]" id="bg">
 </div>
 <div class="absolute inset-0">
-  <div class="md:max-w-350 mx-auto md:p-6 p-1" class:md:min-h-screen={$page.url.pathname === '/'} class:md:flex={$page.url.pathname === '/'} class:md:flex-col={$page.url.pathname === '/'} class:md:justify-between={$page.url.pathname === '/'}>
+  <div class="max-w-350 mx-auto md:p-6 p-1" class:min-h-screen={$page.url.pathname === '/'} class:flex={$page.url.pathname === '/'} class:flex-col={$page.url.pathname === '/'} class:justify-center={$page.url.pathname === '/'}>
     <!-- <div class="grid w-screen h-screen md:max-w-350"> -->
-      {#if $page.url.pathname !== '/resume'}
+      {#if $page.url.pathname !== '/resume' &&  $page.url.pathname !== '/'}
         <Header />
       {/if}
       {@render children()}

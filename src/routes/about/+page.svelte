@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-6 pb-1 pt-6">
+<div class="animate-slide-in flex flex-col gap-6 pb-1 pt-6">
   <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
     <h1 class="mb-5 text-center text-xl">Bio</h1>
     <hr class="my-8 h-px border-0 bg-gray-200" />
