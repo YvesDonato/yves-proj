@@ -98,16 +98,16 @@
           class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"
         ></div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-500">Winter 2019</time>
-        <h3 class="text-lg font-semibold text-white">Reliq Health</h3>
-        <p class="mb-4 text-base font-normal text-gray-400">COOP, Software Development Intern.</p>
-        <p class="mb-4 text-base font-normal">Accelerated defect resolution cycles by creating and triaging 100+ detailed bug reports in Jira,
-  enabling developers to isolate root causes across multiple product environments.</p>
-        <p class="mb-4 text-base font-normal">Reduced onboarding time for future QA staff by authoring 20+ comprehensive Confluence
-  pages documenting test plans, test cases, and QA standard operating procedures.</p>
-        <p class="mb-4 text-base font-normal">Ensured release stability by systematically reproducing complex issues across various browsers and
-  devices, directly supporting product stakeholders in patch prioritization.</p>
-        <p class="mb-4 text-base font-normal">Collaborated with engineering and product teams to verify fixes, ensuring zero regression in critical
-  production deployments.</p>
+        <h3 class="text-lg font-semibold text-white">Reliq Health</h3> 
+        <p class="mb-4 text-base font-normal text-gray-400">COOP, Software Development Intern.</p> 
+        <p class="mb-4 text-base font-normal">Enhanced codebase maintainability by implementing and refactoring 1,000+ lines of code for
+  a healthcare web application using HTML, CSS, and JavaScript.</p>
+        <p class="mb-4 text-base font-normal">Accelerated UI/UX implementation by translating high-fidelity design mockups into responsive,
+  accessible web pages in close collaboration with design teams.</p>
+        <p class="mb-4 text-base font-normal">Improved code quality and consistency by actively participating in code reviews and integrating
+  feedback from senior engineers into production builds.</p>
+        <p class="mb-4 text-base font-normal">Managed version control and collaborative feature development using Git and GitHub.</p>
+      
       </li>
       <li class="mb-10 ms-4">
         <div
@@ -116,13 +116,14 @@
         <time class="mb-1 text-sm font-normal leading-none text-gray-500">Summer 2018</time>
         <h3 class="text-lg font-semibold text-white">Weever Apps</h3>
         <p class="mb-4 text-base font-normal text-gray-400">COOP, QA (Quality Assurance) Intern.</p>
-        <p class="mb-4 text-base font-normal">Enhanced codebase maintainability by implementing and refactoring 1,000+ lines of code for
-  a healthcare web application using HTML, CSS, and JavaScript.</p>
-        <p class="mb-4 text-base font-normal">Accelerated UI/UX implementation by translating high-fidelity design mockups into responsive,
-  accessible web pages in close collaboration with design teams.</p>
-        <p class="mb-4 text-base font-normal">Improved code quality and consistency by actively participating in code reviews and integrating
-  feedback from senior engineers into production builds.</p>
-        <p class="mb-4 text-base font-normal">Managed version control and collaborative feature development using Git and GitHub.</p>
+        <p class="mb-4 text-base font-normal">Accelerated defect resolution cycles by creating and triaging 100+ detailed bug reports in Jira,
+  enabling developers to isolate root causes across multiple product environments.</p>
+        <p class="mb-4 text-base font-normal">Reduced onboarding time for future QA staff by authoring 20+ comprehensive Confluence
+  pages documenting test plans, test cases, and QA standard operating procedures.</p>
+        <p class="mb-4 text-base font-normal">Ensured release stability by systematically reproducing complex issues across various browsers and
+  devices, directly supporting product stakeholders in patch prioritization.</p>
+        <p class="mb-4 text-base font-normal">Collaborated with engineering and product teams to verify fixes, ensuring zero regression in critical
+  production deployments.</p>
 
       </li>
     </ol>
