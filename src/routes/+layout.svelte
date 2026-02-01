@@ -56,7 +56,7 @@
 <div class="absolute inset-0">
   <div class="max-w-350 mx-auto md:p-6 p-1" class:min-h-screen={$page.url.pathname === '/'} class:flex={$page.url.pathname === '/'} class:flex-col={$page.url.pathname === '/'} class:justify-center={$page.url.pathname === '/'}>
     <!-- <div class="grid w-screen h-screen md:max-w-350"> -->
-      {#if $page.url.pathname !== '/resume' &&  $page.url.pathname !== '/'}
+      {#if $page.url.pathname !== '/qr' && $page.url.pathname !== '/resume' &&  $page.url.pathname !== '/'}
         <Header />
       {/if}
       {@render children()}
