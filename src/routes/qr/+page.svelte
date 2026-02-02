@@ -9,9 +9,37 @@
       </div>
       <div>
         <h1 class="text-2xl font-bold text-white">Yves Donato</h1>
-        <p class="text-gray-400">CS 5rd Year · Sheridan College · Toronto, Canada</p>
+        <p class="text-gray-400">CS 5th Year · Sheridan College · Toronto, Canada</p>
       </div>
     </div>
+    
+    <!-- BearHacks Sponsorship CTA -->
+    <div class="my-4 p-4 rounded-lg border-2 border-yellow-500/50 bg-gradient-to-r from-yellow-500/10 to-orange-500/10">
+      <div class="flex items-center gap-2 mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+        </svg>
+        <span class="text-yellow-500 font-semibold text-sm">Sponsorship Opportunity</span>
+      </div>
+      <p class="text-gray-300 text-sm mb-3">
+        <strong class="text-white">BearHacks</strong> is Sheridan College's largest annual hackathon. Join 200+ students across Canada for 36 hours of learning, networking, and building meaningful software.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <a href="https://drive.google.com/file/d/1y-XUfBX6DjhwIGBNQl6au3q7hHnB7Log/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-yellow-500/20 border border-yellow-500/50 px-3 py-1.5 text-xs font-medium text-yellow-400 hover:bg-yellow-500/30 hover:text-yellow-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+          Sponsorship Package
+        </a>
+        <a href="mailto:bearhacks2026@gmail.com" class="inline-flex items-center rounded-lg bg-yellow-500/20 border border-yellow-500/50 px-3 py-1.5 text-xs font-medium text-yellow-400 hover:bg-yellow-500/30 hover:text-yellow-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          bearhacks2026@gmail.com
+        </a>
+      </div>
+    </div>
+    
     <hr class="my-4 h-px border-0 bg-gray-700" />
     <div class="flex flex-wrap gap-3">
       <a href="mailto:yvesdonato@pm.me" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
@@ -31,6 +59,12 @@
           <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
         </svg>
         GitHub
+      </a>
+      <a href="https://drive.google.com/file/d/1tDAa3K6d8u80-2Z3UOptRo8Q326UwkZn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        Resume
       </a>
     </div>
   </div>
