@@ -70,17 +70,14 @@
     class:md:p-6={$page.url.pathname !== '/qr'}
     class:p-1={$page.url.pathname !== '/qr'}
     class:p-0={$page.url.pathname === '/qr'}
-    class:min-h-screen={$page.url.pathname === '/'}
-    class:h-screen={$page.url.pathname === '/qr'}
+    class:min-h-screen={$page.url.pathname === '/' || $page.url.pathname === '/qr'}
+    class:h-dvh={$page.url.pathname === '/qr'}
     class:overflow-hidden={$page.url.pathname === '/qr'}
     class:flex={$page.url.pathname === '/'}
     class:flex-col={$page.url.pathname === '/'}
     class:justify-center={$page.url.pathname === '/'}
   >
     <!-- <div class="grid w-screen h-screen md:max-w-350"> -->
-      {#if $page.url.pathname !== '/qr' && $page.url.pathname !== '/resume' &&  $page.url.pathname !== '/'}
-        <Header />
-      {/if}
       {@render children()}
     <!-- </div> -->
   </div>

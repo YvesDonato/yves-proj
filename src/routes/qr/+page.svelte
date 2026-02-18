@@ -1,4 +1,4 @@
-<div class="animate-slide-in grid h-full place-items-center m-1">
+<div class="animate-slide-in grid h-full place-items-center px-2 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
   <section class="w-full max-w-md rounded-lg bg-gray-800 p-6 text-gray-300 shadow-xl">
     <h1
       class="mb-1 break-words bg-gradient-to-r from-red-400 to-blue-500 bg-clip-text text-center text-3xl font-bold text-transparent"
@@ -6,7 +6,6 @@
       Yves Donato
     </h1>
     <p class="mb-6 text-center text-gray-500">Quick Links</p>
-
     <div class="flex flex-col gap-3">
       <a
         href="https://www.linkedin.com/in/yves-donato-319548250/"
@@ -57,9 +56,9 @@
           stroke="currentColor"
           stroke-width="2"
         >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5M5.25 9.75V21h13.5V9.75" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
-        Home
+        Resume
       </a>
     </div>
   </section>
