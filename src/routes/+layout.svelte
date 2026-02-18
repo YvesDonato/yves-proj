@@ -70,8 +70,9 @@
     class:md:p-6={$page.url.pathname !== '/qr'}
     class:p-1={$page.url.pathname !== '/qr'}
     class:p-0={$page.url.pathname === '/qr'}
-    class:min-h-screen={$page.url.pathname === '/' || $page.url.pathname === '/qr'}
-    class:h-dvh={$page.url.pathname === '/qr'}
+    class:min-h-screen={$page.url.pathname === '/'}
+    class:h-svh={$page.url.pathname === '/qr'}
+    class:md:h-dvh={$page.url.pathname === '/qr'}
     class:overflow-hidden={$page.url.pathname === '/qr'}
     class:flex={$page.url.pathname === '/'}
     class:flex-col={$page.url.pathname === '/'}

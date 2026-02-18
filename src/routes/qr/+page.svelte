@@ -1,4 +1,4 @@
-<div class="animate-slide-in grid h-full place-items-center px-2 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+<div class="animate-slide-in grid h-full place-items-center p-2">
   <section class="w-full max-w-md rounded-lg bg-gray-800 p-6 text-gray-300 shadow-xl">
     <h1
       class="mb-1 break-words bg-gradient-to-r from-red-400 to-blue-500 bg-clip-text text-center text-3xl font-bold text-transparent"
