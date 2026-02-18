@@ -1,5 +1,5 @@
-<div class="absolute inset-0 animate-slide-in grid place-content-center gap-4 top-4 pb-4 md:inset-4">
-  <div class="max-w-200 rounded-lg shadow p-6 text-gray-200 bg-gray-800">
+<div class="animate-slide-in flex flex-col gap-4 pt-2 pb-4 sm:pt-4 md:min-h-screen md:justify-center">
+  <div class="mx-auto w-full max-w-200 rounded-lg bg-gray-800 p-6 text-gray-200 shadow">
     <p>
       Dear Recruiter, <br><br>
       I want to formally thank you for taking your time to both examine my resume and website. I know there are plenty of exceptional applicants who have applied to your company, so taking your time to click on the link on my resume means the world to me, even if you were just checking if I was lying about having a website.
@@ -24,14 +24,10 @@
       Yves Donato
     </p>
   </div>
-  <div class="flex place-content-between">
-    <a href="/" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
+  <div class="flex md:justify-center">
+    <a href="/" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit mb-1" >
       <img src="/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Back arrow" />
       <p>Home</p>
-    </a>
-    <a href="/about" class="flex rounded-lg shadow p-2 text-gray-200 bg-gray-800 w-fit" >
-      <p>Next</p>
-      <img src="/arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Forward arrow" />
     </a>
   </div>
   

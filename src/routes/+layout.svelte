@@ -6,11 +6,22 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount, onDestroy } from 'svelte';
 
-  let vantaEffect;
+	type VantaFogEffect = {
+		destroy: () => void;
+	};
 
-  onMount(() => {
-    if (typeof window !== 'undefined' && window.VANTA?.FOG) {
-      vantaEffect = window.VANTA.FOG({
+	type VantaWindow = Window & {
+		VANTA?: {
+			FOG?: (options: Record<string, unknown>) => VantaFogEffect;
+		};
+	};
+
+	let vantaEffect: VantaFogEffect | null = null;
+
+	onMount(() => {
+		const vanta = (window as VantaWindow).VANTA;
+		if (typeof window !== 'undefined' && vanta?.FOG) {
+			vantaEffect = vanta.FOG({
         el: '#bg',
         mouseControls: true,
         touchControls: true,
@@ -25,7 +36,7 @@
         speed: 1.50
       });
     }
-  });
+	});
 
   onDestroy(() => {
     if (vantaEffect) {
@@ -54,7 +65,18 @@
 <div class="fixed -inset-10 z-[-100]" id="bg">
 </div>
 <div class="absolute inset-0">
-  <div class="max-w-350 mx-auto md:p-6 p-1" class:min-h-screen={$page.url.pathname === '/'} class:flex={$page.url.pathname === '/'} class:flex-col={$page.url.pathname === '/'} class:justify-center={$page.url.pathname === '/'}>
+  <div
+    class="max-w-350 mx-auto"
+    class:md:p-6={$page.url.pathname !== '/qr'}
+    class:p-1={$page.url.pathname !== '/qr'}
+    class:p-0={$page.url.pathname === '/qr'}
+    class:min-h-screen={$page.url.pathname === '/'}
+    class:h-screen={$page.url.pathname === '/qr'}
+    class:overflow-hidden={$page.url.pathname === '/qr'}
+    class:flex={$page.url.pathname === '/'}
+    class:flex-col={$page.url.pathname === '/'}
+    class:justify-center={$page.url.pathname === '/'}
+  >
     <!-- <div class="grid w-screen h-screen md:max-w-350"> -->
       {#if $page.url.pathname !== '/qr' && $page.url.pathname !== '/resume' &&  $page.url.pathname !== '/'}
         <Header />
