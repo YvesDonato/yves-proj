@@ -1,4 +1,4 @@
-<div class="animate-slide-in flex flex-col gap-4 pt-2 pb-4 sm:pt-4 md:min-h-screen md:justify-center">
+<div class="animate-slide-in flex flex-col gap-4 md:min-h-screen md:justify-center">
   <div class="mx-auto w-full max-w-200 rounded-lg bg-gray-800 p-6 text-gray-200 shadow">
     <p>
       Dear Recruiter, <br><br>

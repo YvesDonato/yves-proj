@@ -1,4 +1,4 @@
-<div class="animate-slide-in flex flex-col md:gap-4 gap-2 pb-1 pt-1">
+<div class="animate-slide-in flex flex-col md:gap-4 gap-2 pb-1 pt-1 md:m-6 m-1">
   <!-- Profile Card -->
   <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
     <div class="flex items-center gap-4 mb-4">
