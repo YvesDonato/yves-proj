@@ -438,6 +438,24 @@ button {
 	opacity: 0.45;
 }
 
+.terminal-screen--portrait {
+	background: var(--terminal-panel-lowest);
+}
+
+.terminal-screen--portrait::before {
+	opacity: 0.18;
+}
+
+.terminal-screen--portrait::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(180deg, rgba(5, 6, 13, 0.04), rgba(5, 6, 13, 0.28)),
+		radial-gradient(circle at center, transparent 50%, rgba(5, 6, 13, 0.22) 100%);
+	pointer-events: none;
+}
+
 .terminal-binary {
 	position: absolute;
 	inset: 0;
@@ -456,6 +474,16 @@ button {
 	justify-content: center;
 	padding: 1.25rem;
 	text-align: center;
+}
+
+.terminal-screen__image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 20%;
+	filter: saturate(1.02) contrast(1.04);
 }
 
 .terminal-section-title {

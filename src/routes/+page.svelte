@@ -185,27 +185,14 @@
 		</div>
 
 		<div class="terminal-panel-strong md:col-span-4 p-4">
-			<div class="terminal-screen">
-				<div class="terminal-binary">
-					01011001 01010110 01000101 01010011<br />
-					01000100 01001111 01001110 01000001<br />
-					01010100 01001111 01011111 01000011<br />
-					01010011 01001000 01000101 01010010<br />
-					01001001 01000100 01000001 01001110
-				</div>
-				<div class="terminal-screen__center">
-					<div>
-						<div class="mb-4 text-xs font-mono uppercase tracking-[0.25em] text-[var(--terminal-primary)]">
-							Scanning Operator Profile
-						</div>
-						<div class="text-5xl font-black tracking-[-0.08em] text-[var(--terminal-text)] md:text-6xl">
-							CS
-						</div>
-						<div class="mt-3 text-sm font-mono uppercase tracking-[0.2em] text-[var(--terminal-tertiary)]">
-							Research / Systems / Delivery
-						</div>
-					</div>
-				</div>
+			<div class="terminal-screen terminal-screen--portrait">
+				<img
+					src="/1770299699934.jpg"
+					alt="Portrait of Yves Donato"
+					class="terminal-screen__image"
+					loading="eager"
+					decoding="async"
+				/>
 			</div>
 
 			<div class="mt-4 bg-[var(--terminal-primary)] px-3 py-2 text-center text-xs font-black uppercase tracking-[0.18em] text-[#002151]">

@@ -21,14 +21,6 @@
 </script>
 
 <footer class="terminal-footer" class:compact>
-	<div class="terminal-footer__status">
-		<span>{compact ? `[ ${routeLabel($page.url.pathname)} ]` : '[ SYSTEM: ACTIVE ] ©2026 OPERATOR_ROOT'}</span>
-		<div class="terminal-footer__live">
-			<span class="terminal-dot"></span>
-			<span>Live Feed</span>
-		</div>
-	</div>
-
 	<div class="terminal-footer__links">
 		{#each footerLinks as item}
 			<a href={item.href} target="_blank" rel="noopener noreferrer">
