@@ -1,25 +1,49 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+
+	let { compact = false } = $props<{ compact?: boolean }>();
+
+	const sectionLinks = [
+		{ href: '#about', label: 'About' },
+		{ href: '#education', label: 'Education' },
+		{ href: '#experience', label: 'Experience' },
+		{ href: '#research', label: 'Research' },
+		{ href: '#projects', label: 'Projects' }
+	];
+
+	const routeLinks = [
+		{ href: '/', label: 'Home' },
+		{ href: '/qr', label: 'QR' },
+	];
 </script>
 
-<nav class="animate-fade-in rounded-lg shadow bg-gray-800 h-min">
-	<div class="h-min container flex items-center justify-center p-6 mx-auto capitalize text-gray-300">
-		<a
-			href="/"
-			class="border-b-2 transition-colors duration-300 transform hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
-			class:border-blue-500={$page.url.pathname === '/'}
-			class:border-transparent={$page.url.pathname !== '/'}
-		>
-			home
-		</a>
+<header class="terminal-topbar" class:compact>
+	<div class="terminal-topbar__brand">// YVES_DONATO </div>
 
-		<a
-			href="/qr"
-			class="border-b-2 transition-colors duration-300 transform hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
-			class:border-blue-500={$page.url.pathname === '/qr'}
-			class:border-transparent={$page.url.pathname !== '/qr'}
-		>
-			QR
-		</a>
-	</div>
-</nav>
+	{#if $page.url.pathname === '/'}
+		<nav class="terminal-topbar__nav terminal-topbar__nav--anchors">
+			{#each sectionLinks as item, index}
+				<a href={item.href} class={index === 0 ? 'active-link' : ''}>
+					{item.label}
+				</a>
+			{/each}
+		</nav>
+
+		<div class="terminal-topbar__actions">
+			<a href="/qr">QR</a>
+		</div>
+	{:else}
+		<nav class="terminal-topbar__nav">
+			{#each routeLinks as item}
+				<a href={item.href} class={item.href === $page.url.pathname ? 'active-link' : ''}>
+					{item.label}
+				</a>
+			{/each}
+		</nav>
+
+		<div class="terminal-topbar__status">
+			<span class="terminal-dot"></span>
+			<span>{compact ? 'Compact Mode' : 'System Active'}</span>
+		</div>
+	{/if}
+</header>

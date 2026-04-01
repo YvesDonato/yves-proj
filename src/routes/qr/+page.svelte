@@ -1,90 +1,97 @@
-<div class="animate-slide-in grid h-full place-items-center p-2">
-  <section class="w-full max-w-md rounded-lg bg-gray-800 p-6 text-gray-300 shadow-xl">
-    <h1
-      class="mb-1 break-words bg-gradient-to-r from-red-400 to-blue-500 bg-clip-text text-center text-3xl font-bold text-transparent"
-    >
-      Yves Donato
-    </h1>
-    <p class="mb-6 text-center text-gray-500">Quick Links</p>
-    <div class="flex flex-col gap-3">
-      <a
-        href="https://www.linkedin.com/in/yves-donato-319548250/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center rounded-lg border border-blue-400/60 bg-gradient-to-r from-red-400 to-blue-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition duration-200 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/40"
-      >
-        <svg
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 h-5 w-5"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-        </svg>
-        LinkedIn
-      </a>
+<script lang="ts">
+	const links = [
+		{
+			href: 'https://www.linkedin.com/in/yvesd/',
+			label: 'LinkedIn',
+			description: 'Primary contact channel',
+			tone: 'primary'
+		},
+		{
+			href: 'https://www.bearhacks.com/',
+			label: 'BearHacks',
+			description: 'Hackathon and sponsorship page',
+			tone: 'secondary'
+		},
+		{
+			href: 'https://github.com/YvesDonato',
+			label: 'GitHub',
+			description: 'Projects, experiments, source code',
+			tone: 'default'
+		},
+		{
+			href: '/',
+			label: 'Resume/Home',
+			description: 'Return to operator dashboard',
+			tone: 'default'
+		}
+	];
+</script>
+<style>
 
-      <a
-        href="https://www.bearhacks.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-      >
-        <svg
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          class="mr-1 h-5 w-5"
-          fill="none"
-          viewBox="0 0 32 32"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <circle cx="10" cy="9" r="3" />
-          <circle cx="22" cy="9" r="3" />
-          <circle cx="16" cy="18" r="9" />
-          <circle cx="13" cy="17" r="1" fill="currentColor" stroke="none" />
-          <circle cx="19" cy="17" r="1" fill="currentColor" stroke="none" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16 20.5c1.2 0 2.2.8 2.6 1.9-1 .8-2.1 1.1-2.6 1.1s-1.6-.3-2.6-1.1c.4-1.1 1.4-1.9 2.6-1.9z" />
-        </svg>
-        BearHacks!
-      </a>
+.terminalqr-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
+	border: 2px solid var(--terminal-border);
+	background: var(--terminal-panel-high);
+	padding: 0.75rem 1rem;
+	color: var(--terminal-text);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	transition:
+		transform 0.15s ease,
+		border-color 0.15s ease,
+		background-color 0.15s ease,
+		color 0.15s ease;
+}
 
-      <a
-        href="https://github.com/YvesDonato"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-      >
-        <svg
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 h-4 w-4"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path d="M12 0a12 12 0 00-3.794 23.385c.6.111.82-.261.82-.577v-2.02c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.755-1.333-1.755-1.089-.745.083-.73.083-.73 1.205.084 1.839 1.238 1.839 1.238 1.07 1.834 2.809 1.304 3.494.997.108-.775.419-1.305.763-1.605-2.665-.303-5.467-1.334-5.467-5.93 0-1.31.469-2.381 1.237-3.22-.124-.304-.536-1.524.117-3.177 0 0 1.009-.322 3.303 1.23a11.51 11.51 0 016.012 0c2.293-1.552 3.301-1.23 3.301-1.23.654 1.653.242 2.873.119 3.177.77.839 1.236 1.91 1.236 3.22 0 4.607-2.806 5.626-5.479 5.921.431.372.815 1.103.815 2.222v3.293c0 .319.218.694.825.576A12 12 0 0012 0z" />
-        </svg>
-        GitHub
-      </a>
+.terminalqr-button:hover {
+	transform: translate(-2px, -2px);
+	border-color: var(--terminal-primary);
+	background: rgba(135, 173, 255, 0.12);
+	color: var(--terminal-primary);
+}
+</style>
 
-      <a
-        href="/"
-        class="inline-flex items-center justify-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-      >
-        <svg
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        Resume/Home
-      </a>
-    </div>
-  </section>
-</div>
+<svelte:head>
+	<title>QUICK_LINKS // YVES_DONATO</title>
+</svelte:head>
+
+<section class="animate-zoom-in w-full max-w-md">
+	<div class="terminal-panel-strong p-4 sm:p-6">
+		<div class="mb-4 flex items-center justify-between">
+			<span class="terminal-label">[ Quick_Links ]</span>
+			<span class="terminal-chip">Portable Interface</span>
+		</div>
+
+		<h1 class="mb-2 text-center text-3xl font-black tracking-[-0.05em] text-[var(--terminal-primary)]">
+			YVES DONATO
+		</h1>
+		<p class="mb-6 text-center font-mono text-xs uppercase tracking-[0.2em] text-[var(--terminal-muted)]">
+			Operator contact endpoints
+		</p>
+
+		<div class="space-y-3">
+			{#each links as link}
+				<a
+					href={link.href}
+					target={link.href.startsWith('http') ? '_blank' : undefined}
+					rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+					class="terminalqr-button w-full px-4 py-4"
+					class:primary={link.tone === 'primary'}
+					class:secondary={link.tone === 'secondary'}
+				>
+					<span>
+						<span class="block text-sm font-black tracking-[0.14em]">{link.label}</span>
+						<span class="mt-1 block font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--terminal-muted)]">
+							{link.description}
+						</span>
+					</span>
+					<span class="font-mono text-xs uppercase tracking-[0.16em]">&gt;</span>
+				</a>
+			{/each}
+		</div>
+	</div>
+</section>

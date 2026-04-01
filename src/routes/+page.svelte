@@ -1,362 +1,432 @@
-<div class="animate-slide-in flex flex-col md:gap-4 gap-2 pb-1 pt-1 md:m-6 m-1">
-  <!-- Profile Card -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <div class="flex items-center gap-4 mb-4">
-      <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-red-400 to-blue-500 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-        </svg>
-      </div>
-      <div>
-        <h1 class="text-2xl font-bold text-white">Yves Donato</h1>
-        <p class="text-gray-400">CS 5th Year · Sheridan College · Toronto, Canada</p>
-      </div>
-    </div>
-    
-    <!-- BearHacks Sponsorship CTA -->
-    <div class="my-4 p-4 rounded-lg border-2 border-yellow-500/50 bg-gradient-to-r from-yellow-500/10 to-orange-500/10">
-      <div class="flex items-center gap-2 mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-        </svg>
-        <span class="text-yellow-500 font-semibold text-sm">Sponsorship Opportunity</span>
-      </div>
-      <p class="text-gray-300 text-sm mb-3">
-        <strong class="text-white">BearHacks</strong> is Sheridan College's largest annual hackathon. Join 200+ students across Canada for 36 hours of learning, networking, and building meaningful software.
-      </p>
-      <div class="flex flex-wrap gap-2">
-        <a href="https://drive.google.com/file/d/1y-XUfBX6DjhwIGBNQl6au3q7hHnB7Log/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-yellow-500/20 border border-yellow-500/50 px-3 py-1.5 text-xs font-medium text-yellow-400 hover:bg-yellow-500/30 hover:text-yellow-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-          Sponsorship Package
-        </a>
-        <a href="mailto:bearhacks2026@gmail.com" class="inline-flex items-center rounded-lg bg-yellow-500/20 border border-yellow-500/50 px-3 py-1.5 text-xs font-medium text-yellow-400 hover:bg-yellow-500/30 hover:text-yellow-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          bearhacks2026@gmail.com
-        </a>
-      </div>
-    </div>
-    
-    <hr class="my-4 h-px border-0 bg-gray-700" />
-    <div class="flex flex-wrap gap-3">
-      <a href="mailto:yvesdonato@pm.me" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-        yvesdonato@pm.me
-      </a>
-      <a href="https://www.linkedin.com/in/yves-donato-319548250/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-        LinkedIn
-      </a>
-      <a href="https://www.bearhacks.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 32 32" stroke="currentColor" stroke-width="2">
-          <circle cx="10" cy="9" r="3" />
-          <circle cx="22" cy="9" r="3" />
-          <circle cx="16" cy="18" r="9" />
-          <circle cx="13" cy="17" r="1" fill="currentColor" stroke="none" />
-          <circle cx="19" cy="17" r="1" fill="currentColor" stroke="none" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16 20.5c1.2 0 2.2.8 2.6 1.9-1 .8-2.1 1.1-2.6 1.1s-1.6-.3-2.6-1.1c.4-1.1 1.4-1.9 2.6-1.9z" />
-        </svg>
-        BearHacks
-      </a>
-      <a href="https://github.com/YvesDonato" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-        GitHub
-      </a>
-      <a href="https://drive.google.com/file/d/1x6QiVNHtlIIdYR9dzh7RgcfFny_oZATv/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        Resume
-      </a>
-    </div>
-  </div>
+<script lang="ts">
+	const quickLinks = [
+		{ href: 'mailto:yvesdonato@pm.me', label: 'Secure Mail', tone: 'primary' },
+		{
+			href: 'https://www.linkedin.com/in/yves-donato-319548250/',
+			label: 'LinkedIn',
+			tone: 'default'
+		},
+		{ href: 'https://github.com/YvesDonato', label: 'GitHub', tone: 'default' },
+		{
+			href: 'https://drive.google.com/file/d/1y1Vl5MyjfDbVXCOuyaNu9B_evoi1SLyt/view?usp=sharing',
+			label: 'Resume',
+			tone: 'default'
+		},
+		{ href: 'https://www.bearhacks.com/', label: 'BearHacks', tone: 'secondary' }
+	];
 
-  <!-- Quick Bio -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <h2 class="text-xl font-semibold text-white mb-3">About</h2>
-    <p class="text-gray-400">
-      Software developer and researcher with a passion for Computer Science since high school. Two internships at age 16, 
-      SHSM CS graduate, completed Computer Programming diploma in 2023. Currently pursuing Honours Bachelor of Computer Science 
-      with published research on Large Language Models.
-    </p>
-  </div>
+	const experience = [
+		{
+			period: 'JAN 2026 - PRESENT',
+			company: 'BearHacks',
+			role: 'Software Engineer',
+			points: [
+				'Collaborated with a 40+ person organizing team to scope and ship updates on tight event deadlines.',
+				'Built a Next.js + Tailwind CSS networking web app for a targeted 200+ attendee hackathon.',
+				'Built a secure API routed through Cloudflare Tunnels to a self-hosted Proxmox server.'
+			],
+			accent: 'var(--terminal-secondary)'
+		},
+		{
+			period: 'WINTER 2020',
+			company: 'Reliq Health',
+			role: 'Software Development Intern',
+			points: [
+				'Refactored 1,000+ lines of healthcare web app code.',
+				'Supported production systems used in remote patient monitoring.'
+			],
+			accent: 'var(--terminal-border-soft)'
+		},
+		{
+			period: 'FALL 2019',
+			company: 'Weever Apps',
+			role: 'QA Intern',
+			points: [
+				'Authored 100+ bug reports and validation notes.',
+				'Produced Confluence documentation for internal QA workflows.'
+			],
+			accent: 'var(--terminal-border-soft)'
+		}
+	];
 
-  <!-- Education Summary -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <h2 class="text-xl font-semibold text-white mb-4">Education</h2>
-    <div class="space-y-3">
-      <div class="flex items-start gap-3">
-        <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
-        <div>
-          <h3 class="font-semibold text-white">Honours Bachelor of Computer Science</h3>
-          <p class="text-sm text-gray-500">Sheridan College · Expected Spring 2026</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-3">
-        <div class="w-2 h-2 rounded-full bg-gray-600 mt-2"></div>
-        <div>
-          <h3 class="font-semibold text-white">Computer Programming Diploma</h3>
-          <p class="text-sm text-gray-500">Sheridan College · Spring 2023</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-3">
-        <div class="w-2 h-2 rounded-full bg-gray-600 mt-2"></div>
-        <div>
-          <h3 class="font-semibold text-white">High School SHSM Computer Science</h3>
-          <p class="text-sm text-gray-500">St. Mary Catholic Secondary School · Summer 2021</p>
-        </div>
-      </div>
-    </div>
-  </div>
+	const education = [
+		{
+			title: 'Honours Bachelor of Computer Science',
+			subtitle: 'Sheridan College',
+			meta: 'Expected Fall 2026'
+		},
+		{
+			title: 'Computer Programming Diploma',
+			subtitle: 'Sheridan College',
+			meta: 'Spring 2023'
+		},
+		{
+			title: 'SHSM Computer Science',
+			subtitle: 'St. Mary Catholic Secondary School',
+			meta: 'Summer 2021'
+		}
+	];
 
-  <!-- Experience Summary -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <h2 class="text-xl font-semibold text-white mb-4">Experience</h2>
-    <div class="grid md:grid-cols-2 gap-4">
-      <div class="border-l-2 border-blue-500 pl-4">
-        <h3 class="font-semibold text-white">Reliq Health</h3>
-        <p class="text-sm text-gray-500">Software Development Intern · Winter 2020</p>
-        <p class="text-sm text-gray-400 mt-1">Refactored 1000+ lines of healthcare web app code</p>
-      </div>
-      <div class="border-l-2 border-gray-600 pl-4">
-        <h3 class="font-semibold text-white">Weever Apps</h3>
-        <p class="text-sm text-gray-500">QA Intern · Fall 2019</p>
-        <p class="text-sm text-gray-400 mt-1">100+ bug reports, Confluence documentation</p>
-      </div>
-    </div>
-  </div>
+	const metrics = [
+		{ label: 'REASONING_EFFICIENCY', value: '98.2%', width: '98.2%' },
+		{ label: 'TOKEN_REDUCTION', value: '42.0%', width: '42%' },
+		{ label: 'PIPELINE_AUTOMATION', value: '91.4%', width: '91.4%' }
+	];
 
-  <!-- Research Section -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-xl font-semibold text-white">Research</h2>
-      <span class="rounded-full bg-gradient-to-r from-red-400 to-blue-500 px-3 py-1 text-xs font-medium text-white">Thesis</span>
-    </div>
-    <h3 class="text-lg font-semibold text-white mb-1">Effects of Chain-of-Thought Prompting Vs Reasoning LLMs</h3>
-    <p class="text-sm text-gray-500 mb-3">Jan 2025 – Present</p>
-    <p class="text-gray-400 mb-3">
-      Quantifying internal reasoning mechanisms in LLMs by benchmarking Chain-of-Thought prompting against native reasoning models.
-    </p>
-    <ul class="list-disc list-inside text-gray-400 mb-4 space-y-1 text-sm">
-      <li>Benchmarking on SWE-Bench and AIME 2025 datasets</li>
-      <li>Engineered high-throughput pipeline in Rust and Python for automated evaluation</li>
-      <li>Statistical analysis of performance differences and failure modes</li>
-    </ul>
-    <div class="flex flex-wrap gap-2">
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Rust</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Python</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">SWE-Bench</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">AIME 2025</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Statistical Analytics</span>
-    </div>
-  </div>
+	const featuredProjects = [
+		{
+			name: 'PRISMARINE',
+			badge: '5TH PLACE // CTRL+HACK+DEL',
+			description:
+				'Interactive research exploration platform that turns paper collections into a 3D similarity graph with resilient paper aggregation, embedding-based linking, narration, and self-hosted deployment.',
+			tech: ['React', 'Three.js', 'FastAPI', 'Semantic Scholar', 'ElevenLabs', 'Coolify'],
+			links: [
+				{ href: 'https://devpost.com/software/prismarine', label: 'Devpost' },
+				{ href: 'https://prismarine.yvesdonato.com/', label: 'Live Demo' },
+				{ href: 'https://github.com/YvesDonato/YorkHackathon2026', label: 'Source' }
+			],
+			accentBadgeClass: 'border-[var(--terminal-primary)] text-[var(--terminal-primary)]',
+			accentTitleClass: 'text-[var(--terminal-primary)]'
+		},
+		{
+			name: 'NEURIZZ',
+			badge: '2X CATEGORY WINNER // HACKVILLE',
+			description:
+				'Real-time social simulation platform for neurodivergent users built with SvelteKit and Three.js, backed by live voice agents, sentiment scoring, and secure self-hosted infrastructure.',
+			tech: ['SvelteKit', 'Three.js', 'Google AI', 'ElevenLabs', 'MongoDB', 'Coolify'],
+			links: [
+				{ href: 'https://devpost.com/software/neurizz', label: 'Devpost' },
+				{ href: 'https://neurizz.yvesdonato.com/', label: 'Live Demo' },
+				{ href: 'https://github.com/YvesDonato/Hackville2026', label: 'Source' }
+			],
+			accentBadgeClass: 'border-[var(--terminal-secondary)] text-[var(--terminal-secondary)]',
+			accentTitleClass: 'text-[var(--terminal-secondary)]'
+		},
+		{
+			name: 'VOXEL',
+			badge: 'BEST AI HACK USING IBM TECHNOLOGY // GENAI GENESIS 2026',
+			description:
+				'Immersive AR learning app that turns text prompts into AI-generated 3D teaching models, spatial flashcards, and animated educational experiences with a Flutter frontend and orchestrated generative pipeline.',
+			tech: ['Dart', 'Flutter', 'AR', 'Meshy AI', 'Langflow', 'Watson AI', 'DB2'],
+			links: [
+				{ href: 'https://devpost.com/software/voxel-pnxmlc', label: 'Devpost' },
+				{ href: 'https://github.com/georgef166/GenAIGenesis2026', label: 'Source' }
+			],
+			accentBadgeClass: 'border-[var(--terminal-tertiary)] text-[var(--terminal-tertiary)]',
+			accentTitleClass: 'text-[var(--terminal-tertiary)]'
+		},
+		{
+			name: 'EMBER',
+			badge: '2X CATEGORY WINNER // HACK CANADA 2026',
+			description:
+				'Wildfire-response AR HUD and command dashboard that guides responders through zero-visibility smoke, streams live POV and detections over WebRTC, and surfaces real-time biometric stress data to commanders.',
+			tech: ['Next.js', 'React', 'WebXR', 'WebRTC', 'FastAPI', 'TensorFlow.js', 'WearOS'],
+			links: [
+				{ href: 'https://devpost.com/software/ember-xwdyzl', label: 'Devpost' },
+				{ href: 'https://github.com/georgef166/Ember', label: 'Source' }
+			],
+			accentBadgeClass: 'border-[var(--terminal-danger)] text-[var(--terminal-danger)]',
+			accentTitleClass: 'text-[var(--terminal-danger)]'
+		}
+	];
 
-  <!-- Featured Projects -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-xl font-semibold text-white">Featured Projects</h2>
-    </div>
+	const archiveProjects = [
+		'Custom Linux Desktop Environment // automated dev workflows, kernel config, and LMS scraping',
+		'AcademAmigo // LLM-powered study platform with SvelteKit, TypeScript, PostgreSQL, and Supabase',
+		'Proxmox LLM Server // self-hosted AI infrastructure using Rust, Docker, LXC, and Ollama',
+		'Resume Tailoring Pipeline // n8n, SQLite, RAG matching, LaTeX PDF generation',
+		'Plates Gym Logger // Kotlin Android app using Health Connect and SQLite'
+	];
+</script>
 
-    <div class="mb-1 flex items-center justify-between gap-3">
-      <h3 class="text-lg font-semibold text-white">Prismarine</h3>
-      <span class="rounded-full bg-gradient-to-r from-red-400 to-blue-500 px-3 py-1 text-xs font-medium text-white">5th Place</span>
-    </div>
-    <p class="text-sm text-gray-500 mb-2">5th Place @ CTRL+HACK+DEL · Feb 2026</p>
-    <p class="text-gray-400 mb-4">
-      Interactive research exploration platform that turns paper collections into a 3D similarity graph.
-      Built with react-force-graph-3d and Three.js, backed by a FastAPI service aggregating arXiv, PMC,
-      and Semantic Scholar with resilient fallbacks, plus embedding-based linking (cosine similarity + kNN),
-      ElevenLabs narration, and Docker Compose deployment through Coolify.
-    </p>
-    <div class="flex flex-wrap gap-2 mb-4">
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">React</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Three.js</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">react-force-graph-3d</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">FastAPI</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Semantic Scholar</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">ElevenLabs</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Docker Compose</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Coolify</span>
-    </div>
-    <div class="flex gap-3 flex-wrap">
-      <a href="https://devpost.com/software/prismarine" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        CTRL+HACK+DEL
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-      <a href="https://prismarine.yvesdonato.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        Live Demo
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-      <a href="https://github.com/YvesDonato/YorkHackathon2026" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        GitHub
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-    </div>
+<svelte:head>
+	<title>HOME // YVES_DONATO </title>
+</svelte:head>
 
-    <hr class="my-6 h-px border-0 bg-gray-700" />
+<div class="animate-slide-in space-y-6 md:space-y-8">
+	<section id="about" class="terminal-anchor-target grid grid-cols-1 gap-6 md:grid-cols-12">
+		<div class="terminal-panel md:col-span-8 p-6 md:p-8">
+			<div class="mb-6 flex flex-wrap items-center gap-3">
+				<span class="terminal-label">[ Identity_Init ]</span>
+				<span class="terminal-chip">Toronto_Node</span>
+				<span class="terminal-chip">Status: Active_Research</span>
+			</div>
 
-    <div class="mb-1 flex items-center justify-between gap-3">
-      <h3 class="text-lg font-semibold text-white">NeuRizz</h3>
-      <span class="rounded-full bg-gradient-to-r from-red-400 to-blue-500 px-3 py-1 text-xs font-medium text-white">2x Category Winner</span>
-    </div>
-    <p class="text-sm text-gray-500 mb-2">2x Category Winner @ Hackville · Jan 2026</p>
-    <p class="text-gray-400 mb-4">
-      Real-time social simulation platform for neurodivergent users built with SvelteKit and Three.js
-      with a non-stimulating, accessible 3D interface. Integrated Google AI and ElevenLabs for low-latency
-      voice agents, live sentiment analysis, conversational scoring, and emotive text-to-speech. Deployed on
-      a secure self-hosted stack with Coolify and MongoDB for auth and conversation history.
-    </p>
-    <div class="flex flex-wrap gap-2 mb-4">
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">SvelteKit</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Three.js</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Google AI</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">ElevenLabs</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Coolify</span>
-      <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">MongoDB</span>
-    </div>
-    <div class="flex gap-3 flex-wrap">
-      <a href=" https://devpost.com/software/neurizz " target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        Hackville
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-      <a href="https://neurizz.yvesdonato.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        Live Demo
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-      <a href="https://github.com/YvesDonato/Hackville2026" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
-        GitHub
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-    </div>
-  </div>
+			<h1 class="terminal-section-title mb-4">YVES DONATO</h1>
+			<p class="mb-5 max-w-3xl text-lg text-[var(--terminal-primary)] md:text-2xl">
+				Software developer and AI researcher optimizing how LLMs reason, evaluate, and ship in real systems.
+			</p>
+			<p class="max-w-3xl text-sm leading-7 text-[var(--terminal-muted)] md:text-base">
+				Computer Science fifth-year at Sheridan College with published research, early-industry internships,
+				and a heavy bias toward infrastructure, evaluation pipelines, and ambitious side projects that
+				actually get deployed.
+			</p>
 
-  <!-- Other Projects -->
-  <div class="rounded-lg bg-gray-800 p-6 text-gray-300 shadow">
-    <h2 class="text-xl font-semibold text-white mb-4">Other Projects</h2>
-    
-    <!-- Custom Linux Desktop Environment -->
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-white mb-1">Custom Linux Desktop Environment</h3>
-      <p class="text-sm text-gray-500 mb-2">Personal Project · Feb 2024 – Present</p>
-      <ul class="list-disc list-inside text-gray-400 mb-3 space-y-1 text-sm">
-        <li>Automated development workflows by building a highly customized Linux environment, including kernel configuration and window manager scripting</li>
-        <li>Built a productivity chatbot using Python, Selenium, and Beautiful Soup to scrape and summarize LMS deadlines, streamlining academic tracking</li>
-      </ul>
-      <div class="flex flex-wrap gap-2">
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Linux</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Python</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Selenium</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Beautiful Soup</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Kernel Config</span>
-      </div>
-    </div>
-    
-    <hr class="my-4 h-px border-0 bg-gray-700" />
-    
-    <!-- AcademAmigo -->
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-white mb-1">AcademAmigo</h3>
-      <p class="text-sm text-gray-500 mb-2">Personal Project · May 2024 – Dec 2024</p>
-      <ul class="list-disc list-inside text-gray-400 mb-3 space-y-1 text-sm">
-        <li>Deployed LLM-powered educational platform serving 15+ active students for flashcard generation and quizzing</li>
-        <li>Optimized frontend performance by migrating from React to SvelteKit, writing 5,000+ lines of TypeScript</li>
-        <li>Architected secure, scalable user data layer using PostgreSQL and Supabase for authentication</li>
-      </ul>
-      <div class="flex flex-wrap gap-2">
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">SvelteKit</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">TypeScript</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">PostgreSQL</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Supabase</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">LLM</span>
-      </div>
-    </div>
-    
-    <hr class="my-4 h-px border-0 bg-gray-700" />
-    
-    <!-- Proxmox LLM Server -->
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-white mb-1">Proxmox LLM Server</h3>
-      <p class="text-sm text-gray-500 mb-2">Personal Project · May 2025 – Jun 2025</p>
-      <ul class="list-disc list-inside text-gray-400 mb-3 space-y-1 text-sm">
-        <li>Constructed local high-performance AI infrastructure using Proxmox, Docker, and LXC containers to host LLM workloads</li>
-        <li>Engineered Rust-based API endpoints integrated with Ollama to coordinate autonomous agents for news retrieval</li>
-        <li>Automated daily intelligence reporting by deploying an LLM agent aggregating data via Google Search APIs</li>
-      </ul>
-      <div class="flex flex-wrap gap-2">
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Rust</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Proxmox</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Docker</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">LXC</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Ollama</span>
-      </div>
-    </div>
-    
-    <hr class="my-4 h-px border-0 bg-gray-700" />
-    
-    <!-- Automated Resume Tailoring Pipeline -->
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-white mb-1">Automated Resume Tailoring Pipeline</h3>
-      <p class="text-sm text-gray-500 mb-2">Personal Project · Nov 2025 – Dec 2025</p>
-      <ul class="list-disc list-inside text-gray-400 mb-3 space-y-1 text-sm">
-        <li>Engineered an n8n automation pipeline to scrape job postings from LinkedIn/Indeed and archive parsed requirements into SQLite</li>
-        <li>Developed a Python resume compiler that uses a retrieval-based (RAG-style) matcher to dynamically rank and select the most relevant skills and projects per job</li>
-        <li>Exposed generation via a REST API to produce LaTeX PDFs, ensuring zero hallucinations by strictly assembling documents from pre-validated, human-written bullets</li>
-      </ul>
-      <div class="flex flex-wrap gap-2">
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Python</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">n8n</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">SQLite</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">RAG</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">LaTeX</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">REST API</span>
-      </div>
-    </div>
-    
-    <hr class="my-4 h-px border-0 bg-gray-700" />
-    
-    <!-- Plates Gym Logger -->
-    <div>
-      <h3 class="text-lg font-semibold text-white mb-1">Plates Gym Logger Mobile App</h3>
-      <p class="text-sm text-gray-500 mb-2">Personal Project · Jun 2025 – Dec 2025</p>
-      <ul class="list-disc list-inside text-gray-400 mb-3 space-y-1 text-sm">
-        <li>Developed native Android health tracker using Kotlin and Health Connect APIs to monitor steps, heart rate, and sleep</li>
-        <li>Reduced data retrieval latency by designing optimized SQLite database schema for workout history</li>
-        <li>Delivered high-fidelity UX by implementing custom front-end screens based on professional UI/UX designs</li>
-      </ul>
-      <div class="flex flex-wrap gap-2">
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Kotlin</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Android</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">Health Connect</span>
-        <span class="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300">SQLite</span>
-      </div>
-    </div>
-  </div>
+			<div class="mt-8 flex flex-wrap gap-3">
+				{#each quickLinks as link}
+					<a
+						href={link.href}
+						target={link.href.startsWith('http') ? '_blank' : undefined}
+						rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+						class="terminal-button"
+						class:primary={link.tone === 'primary'}
+						class:secondary={link.tone === 'secondary'}
+					>
+						{link.label}
+					</a>
+				{/each}
+			</div>
 
-  <!-- QR Footer -->
-  <div class="rounded-lg bg-gray-800 p-4 text-center text-gray-300 shadow">
-    <p class="text-sm text-gray-500">
-      Please hire me I need a J*b
-    </p>
-  </div>
+			<div class="mt-8 flex flex-wrap gap-3 border-t border-[var(--terminal-border-soft)] pt-4 text-xs font-mono uppercase tracking-[0.16em]">
+				<span class="text-[var(--terminal-secondary)]">&gt; Stack: Python, Rust, TypeScript</span>
+				<span class="text-[var(--terminal-muted)]">&gt; Focus: LLM Evaluation + Infra</span>
+				<span class="text-[var(--terminal-muted)]">&gt; Mode: Build / Research / Ship</span>
+			</div>
+		</div>
+
+		<div class="terminal-panel-strong md:col-span-4 p-4">
+			<div class="terminal-screen">
+				<div class="terminal-binary">
+					01011001 01010110 01000101 01010011<br />
+					01000100 01001111 01001110 01000001<br />
+					01010100 01001111 01011111 01000011<br />
+					01010011 01001000 01000101 01010010<br />
+					01001001 01000100 01000001 01001110
+				</div>
+				<div class="terminal-screen__center">
+					<div>
+						<div class="mb-4 text-xs font-mono uppercase tracking-[0.25em] text-[var(--terminal-primary)]">
+							Scanning Operator Profile
+						</div>
+						<div class="text-5xl font-black tracking-[-0.08em] text-[var(--terminal-text)] md:text-6xl">
+							CS
+						</div>
+						<div class="mt-3 text-sm font-mono uppercase tracking-[0.2em] text-[var(--terminal-tertiary)]">
+							Research / Systems / Delivery
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-4 bg-[var(--terminal-primary)] px-3 py-2 text-center text-xs font-black uppercase tracking-[0.18em] text-[#002151]">
+				Operator Visual Data
+			</div>
+		</div>
+	</section>
+
+	<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+		<section id="experience" class="terminal-anchor-target terminal-panel md:col-span-2">
+			<div class="flex items-center justify-between bg-[var(--terminal-primary)] px-4 py-3 text-xs font-black uppercase tracking-[0.16em] text-[#002151]">
+				<span>Work History // Log</span>
+				<span>EMPLOYMENT</span>
+			</div>
+			<div class="space-y-8 p-6 md:p-8">
+				{#each experience as item}
+					<div class="flex flex-col gap-4 border-l-4 pl-5 md:flex-row" style={`border-color: ${item.accent};`}>
+						<div class="md:w-1/4">
+							<div class="font-mono text-xs uppercase tracking-[0.18em] text-[var(--terminal-secondary)]">
+								{item.period}
+							</div>
+						</div>
+						<div class="md:w-3/4">
+							<h3 class="text-2xl font-bold">{item.company}</h3>
+							<p class="mb-4 font-mono text-xs uppercase tracking-[0.16em] text-[var(--terminal-primary)]">
+								{item.role}
+							</p>
+							<ul class="space-y-2 text-sm leading-7 text-[var(--terminal-muted)]">
+								{#each item.points as point}
+									<li>:: {point}</li>
+								{/each}
+							</ul>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</section>
+
+		<section id="education" class="terminal-anchor-target terminal-panel">
+			<div class="flex items-center justify-between bg-[var(--terminal-secondary)] px-4 py-3 text-xs font-black uppercase tracking-[0.16em] text-[#28104b]">
+				<span>Academic Data</span>
+				<span>EDU</span>
+			</div>
+			<div class="p-6 md:p-8">
+				<div class="space-y-6">
+					{#each education as item, index}
+						<div>
+							<h3 class="text-lg font-bold leading-tight">{item.title}</h3>
+							<p class="text-sm text-[var(--terminal-muted)]">{item.subtitle}</p>
+							<p class="mt-2 font-mono text-xs uppercase tracking-[0.14em] text-[var(--terminal-primary)]">
+								{item.meta}
+							</p>
+						</div>
+						{#if index < education.length - 1}
+							<div class="terminal-divider">
+								++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+							</div>
+						{/if}
+					{/each}
+				</div>
+
+				<div class="mt-8 space-y-3 border-t border-[var(--terminal-border-soft)] pt-5">
+					<div class="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.12em]">
+						<div class="h-2 w-2 bg-[var(--terminal-primary)]"></div>
+						<span>Large Language Model Research</span>
+					</div>
+					<div class="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.12em]">
+						<div class="h-2 w-2 bg-[var(--terminal-primary)]"></div>
+						<span>Infrastructure + Systems Engineering</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section id="research" class="terminal-anchor-target terminal-panel overflow-hidden">
+		<div class="grid grid-cols-1 md:grid-cols-2">
+			<div class="space-y-6 p-6 md:border-r md:border-[var(--terminal-border)] md:p-8">
+				<span class="terminal-label tertiary">[ Research_Core ]</span>
+				<h2 class="text-3xl font-black tracking-[-0.04em] md:text-5xl">
+					Chain-of-Thought Prompting vs Reasoning LLMs
+				</h2>
+				<p class="text-sm leading-7 text-[var(--terminal-muted)] md:text-base">
+					Current thesis work quantifying internal reasoning mechanisms by benchmarking Chain-of-Thought
+					prompting against native reasoning models on SWE-Bench and AIME 2025, using a high-throughput
+					Rust/Python evaluation pipeline.
+				</p>
+			</div>
+
+			<div class="bg-[var(--terminal-panel-low)] p-6 md:p-8">
+				<div class="space-y-5">
+					{#each metrics as metric}
+						<div>
+							<div class="mb-2 flex justify-between text-xs font-mono uppercase tracking-[0.16em] text-[var(--terminal-muted)]">
+								<span>{metric.label}</span>
+								<span>{metric.value}</span>
+							</div>
+							<div class="terminal-meter">
+								<span style={`width: ${metric.width};`}></span>
+							</div>
+						</div>
+					{/each}
+				</div>
+
+				<div class="mt-8 flex flex-wrap gap-2">
+					<span class="terminal-chip">Rust Pipeline</span>
+					<span class="terminal-chip">Python Eval</span>
+					<span class="terminal-chip">SWE-Bench</span>
+					<span class="terminal-chip">AIME 2025</span>
+					<span class="terminal-chip">Statistical Analytics</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects" class="terminal-anchor-target space-y-6">
+		<div class="flex items-center gap-4">
+			<h2 class="text-3xl font-black uppercase tracking-[-0.04em] md:text-4xl">Project Archives</h2>
+			<div class="h-px flex-1 bg-[var(--terminal-border-soft)]"></div>
+			<span class="font-mono text-xs uppercase tracking-[0.16em] text-[var(--terminal-muted)]">
+				TOTAL: {String(featuredProjects.length).padStart(2, '0')} FEATURED
+			</span>
+		</div>
+
+		<div class="grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-4">
+			{#each featuredProjects as project}
+				<article class="terminal-panel overflow-hidden">
+					<div class="border-b border-[var(--terminal-border)] bg-[var(--terminal-panel-low)] p-4">
+						<div class="terminal-screen min-h-[12rem]">
+							<div class="terminal-binary">
+								BUILD_MATRIX // {project.name}<br />
+								PIPELINE_READY // TRUE<br />
+								DEPLOYMENT_STATUS // STABLE<br />
+								ARTIFACTS // VERIFIED
+							</div>
+							<div class="terminal-screen__center">
+								<div>
+									<div
+										class={`mb-3 inline-flex border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] ${project.accentBadgeClass}`}
+									>
+										{project.badge}
+									</div>
+									<div
+										class={`text-4xl font-black tracking-[-0.08em] md:text-5xl ${project.accentTitleClass}`}
+									>
+										{project.name}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="space-y-5 p-6">
+						<p class="text-sm leading-7 text-[var(--terminal-muted)]">{project.description}</p>
+
+						<div class="flex flex-wrap gap-2">
+							{#each project.tech as tech}
+								<span class="terminal-chip">{tech}</span>
+							{/each}
+						</div>
+
+						<div class="flex flex-wrap gap-3">
+							{#each project.links as link}
+								<a href={link.href} target="_blank" rel="noopener noreferrer" class="terminal-button">
+									{link.label}
+								</a>
+							{/each}
+						</div>
+					</div>
+				</article>
+			{/each}
+		</div>
+	</section>
+
+	<div class="grid grid-cols-1 gap-6 md:grid-cols-[1.2fr_0.8fr]">
+		<section class="terminal-panel p-6 md:p-8">
+			<div class="mb-4 flex items-center justify-between">
+				<h2 class="text-2xl font-black uppercase tracking-[-0.03em]">Project Log / Other Builds</h2>
+				<span class="terminal-chip">5 archived</span>
+			</div>
+			<div class="space-y-4">
+				{#each archiveProjects as item, index}
+					<div class="rounded-none border border-[var(--terminal-border-soft)] bg-[var(--terminal-panel-low)] px-4 py-3">
+						<div class="font-mono text-xs uppercase tracking-[0.14em] text-[var(--terminal-muted)]">
+							0{index + 1} // {item}
+						</div>
+					</div>
+				{/each}
+			</div>
+		</section>
+
+		<aside class="space-y-6">
+			<section class="terminal-panel p-6">
+				<span class="terminal-label secondary">[ Sponsorship_Opportunity ]</span>
+				<h2 class="mt-5 text-2xl font-black tracking-[-0.03em]">BearHacks</h2>
+				<p class="mt-3 text-sm leading-7 text-[var(--terminal-muted)]">
+					Sheridan College&apos;s annual hackathon bringing together 200+ students across Canada for 36
+					hours of learning, networking, and shipping meaningful software.
+				</p>
+				<div class="mt-6 flex flex-wrap gap-3">
+					<a
+						href="https://drive.google.com/file/d/1y-XUfBX6DjhwIGBNQl6au3q7hHnB7Log/view?usp=sharing"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="terminal-button secondary"
+					>
+						Sponsorship Package
+					</a>
+					<a href="mailto:bearhacks2026@gmail.com" class="terminal-button">
+						Contact Team
+					</a>
+				</div>
+			</section>
+
+			<section class="terminal-panel p-6">
+				<span class="terminal-label danger">[ Availability ]</span>
+				<p class="mt-4 text-sm leading-7 text-[var(--terminal-muted)]">
+					Looking for high-signal software or research roles where systems thinking, evaluation rigor, and
+					shipping velocity matter.
+				</p>
+			</section>
+		</aside>
+	</div>
 </div>
