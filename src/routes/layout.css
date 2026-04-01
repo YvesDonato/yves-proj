@@ -439,6 +439,10 @@ button {
 }
 
 .terminal-screen--portrait {
+	width: min(100%, 24rem);
+	min-height: auto;
+	aspect-ratio: 1;
+	margin-inline: auto;
 	background: var(--terminal-panel-lowest);
 }
 
@@ -484,6 +488,17 @@ button {
 	object-fit: cover;
 	object-position: center 20%;
 	filter: saturate(1.02) contrast(1.04);
+}
+
+.terminal-screen__image--portrait {
+	inset: 50% auto auto 50%;
+	width: 400px;
+	height: 400px;
+	max-width: none;
+	max-height: none;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	object-position: center;
 }
 
 .terminal-section-title {

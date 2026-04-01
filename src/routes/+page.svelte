@@ -189,7 +189,7 @@
 				<img
 					src="/1770299699934.jpg"
 					alt="Portrait of Yves Donato"
-					class="terminal-screen__image"
+					class="terminal-screen__image terminal-screen__image--portrait"
 					loading="eager"
 					decoding="async"
 				/>
