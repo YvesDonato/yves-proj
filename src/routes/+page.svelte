@@ -11,8 +11,7 @@
 			href: 'https://drive.google.com/file/d/1y1Vl5MyjfDbVXCOuyaNu9B_evoi1SLyt/view?usp=sharing',
 			label: 'Resume',
 			tone: 'default'
-		},
-		{ href: 'https://www.bearhacks.com/', label: 'BearHacks', tone: 'secondary' }
+		}
 	];
 
 	const experience = [
@@ -385,28 +384,6 @@
 		</section>
 
 		<aside class="space-y-6">
-			<section class="terminal-panel p-6">
-				<span class="terminal-label secondary">[ Sponsorship_Opportunity ]</span>
-				<h2 class="mt-5 text-2xl font-black tracking-[-0.03em]">BearHacks</h2>
-				<p class="mt-3 text-sm leading-7 text-[var(--terminal-muted)]">
-					Sheridan College&apos;s annual hackathon bringing together 200+ students across Canada for 36
-					hours of learning, networking, and shipping meaningful software.
-				</p>
-				<div class="mt-6 flex flex-wrap gap-3">
-					<a
-						href="https://drive.google.com/file/d/1y-XUfBX6DjhwIGBNQl6au3q7hHnB7Log/view?usp=sharing"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="terminal-button secondary"
-					>
-						Sponsorship Package
-					</a>
-					<a href="mailto:bearhacks2026@gmail.com" class="terminal-button">
-						Contact Team
-					</a>
-				</div>
-			</section>
-
 			<section class="terminal-panel p-6">
 				<span class="terminal-label danger">[ Availability ]</span>
 				<p class="mt-4 text-sm leading-7 text-[var(--terminal-muted)]">
