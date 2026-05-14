@@ -8,7 +8,7 @@
 		},
 		{ href: 'https://github.com/YvesDonato', label: 'GitHub', tone: 'default' },
 		{
-			href: 'https://drive.google.com/file/d/1y1Vl5MyjfDbVXCOuyaNu9B_evoi1SLyt/view?usp=sharing',
+			href: 'https://drive.google.com/file/d/1fainYYrWOwEK5Jm_C1vFS5MU2CRQUhC2/view?usp=sharing',
 			label: 'Resume',
 			tone: 'default'
 		}
